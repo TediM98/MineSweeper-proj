@@ -16,16 +16,8 @@ h1 {
 
 table {
   margin: auto;
-  margin-top: 100px;
+  margin-top: 50px;
 }
-
-/* .board-container {
-  background-color: lightblue;
-  text-align: center;
-  width: 300px;
-  height: 300px;
-  margin: auto;
-} */
 
 td {
   height: 20px;
@@ -37,6 +29,21 @@ td {
   border-bottom-color: #7b7b7b;
   border-left-color: #ffffff;
   text-align: center;
-  vertical-align: middle;
   cursor: pointer;
+}
+
+p {
+  margin-top: 450px;
+  color: antiquewhite;
+  font-size: 20px;
+}
+
+.reset-btn {
+  border-radius: 50%;
+  font-size: 30px;
+  background-color: yellow;
+}
+
+.buttons {
+  padding-top: 30px;
 }

@@ -9,9 +9,21 @@
   </head>
   <body onload="onInit()">
     <h1>MineSweeper</h1>
+    <div class="retart">
+      <button class="reset-btn">😃</button>
+    </div>
+
     <div class="board-container"></div>
+    <div class="buttons">
+      <button class="easy" onclick="getLevel(4)">Easy(16)</button>
+      <button class="medium" onclick="getLevel(8)">Medium(64)</button>
+      <button class="hard" onclick="getLevel(12)">Hard(144)</button>
+    </div>
 
     <script src="js/util.js"></script>
     <script src="js/main.js"></script>
   </body>
+  <footer>
+    <p>™ Tedi Marunchak ™</p>
+  </footer>
 </html>
