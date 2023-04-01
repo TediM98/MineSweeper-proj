@@ -9,19 +9,57 @@
   </head>
   <body onload="onInit()">
     <h1>MineSweeper</h1>
-    <div class="retart">
-      <button class="reset-btn">😃</button>
+
+    <div class="hints">
+      <img
+        onclick="useHint(this)"
+        class="bulbOff1"
+        src="img/lightbulbOff.png"
+      />
+      <img
+        onclick="useHint(this)"
+        class="bulbOff2"
+        src="img/lightbulbOff.png"
+      />
+      <img
+        onclick="useHint(this)"
+        class="bulbOff3"
+        src="img/lightbulbOff.png"
+      />
+      <img
+        onclick="useHint(this)"
+        class="bulbOn hide"
+        src="img/lightbulbOn.png"
+      />
+    </div>
+    <div class="timer-container">
+      <span class="timer">00:00</span>
     </div>
 
+    <div class="retart">
+      <button onclick="restartGame()" class="reset-btn">😃</button>
+    </div>
+
+    <button class="darkModeBtn" onclick="darkMode()">DarkMode</button>
+
     <div class="board-container"></div>
+
     <div class="buttons">
       <button class="easy" onclick="getLevel(4)">Easy(16)</button>
       <button class="medium" onclick="getLevel(8)">Medium(64)</button>
       <button class="hard" onclick="getLevel(12)">Hard(144)</button>
     </div>
+    <!-- <div class="highScore">🥇highScore:</div> -->
+    <div class="SafeBtn">
+      <button class="safeClick" onclick="useSafe()">Safe Click</button>
+      <br />
+      <span>3 Clicks available</span>
+    </div>
+    <div class="livesLeft"></div>
 
     <script src="js/util.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/timer.js"></script>
   </body>
   <footer>
     <p>™ Tedi Marunchak ™</p>

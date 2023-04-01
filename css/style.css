@@ -1,22 +1,37 @@
 body {
-  background-color: black;
+  background-color: lightblue;
   text-align: center;
   color: white;
+  margin: auto;
+  font-family: fantasy;
+}
+
+.highScore {
+  color: black;
+}
+
+.darkModeBtn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-radius: 50px;
 }
 
 h1 {
+  font-family: fantasy;
   font-size: 60px;
   color: mediumslateblue;
 }
 
 .cell img {
   width: 25px;
-  height: auto;
+  height: 25px;
 }
 
 table {
   margin: auto;
   margin-top: 50px;
+  border: 5px;
 }
 
 td {
@@ -33,7 +48,9 @@ td {
 }
 
 p {
-  margin-top: 450px;
+  border-top: dotted;
+  padding-top: 10px;
+  margin-top: 200px;
   color: antiquewhite;
   font-size: 20px;
 }
@@ -46,4 +63,182 @@ p {
 
 .buttons {
   padding-top: 30px;
+}
+
+.easy {
+  background: #5e5df0;
+  border-radius: 999px;
+  box-shadow: #5e5df0 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: Inter, Helvetica, 'Apple Color Emoji', 'Segoe UI Emoji',
+    NotoColorEmoji, 'Noto Color Emoji', 'Segoe UI Symbol', 'Android Emoji',
+    EmojiSymbols, -apple-system, system-ui, 'Segoe UI', Roboto, 'Helvetica Neue',
+    'Noto Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+}
+
+.medium {
+  background: #5e5df0;
+  border-radius: 999px;
+  box-shadow: #5e5df0 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: Inter, Helvetica, 'Apple Color Emoji', 'Segoe UI Emoji',
+    NotoColorEmoji, 'Noto Color Emoji', 'Segoe UI Symbol', 'Android Emoji',
+    EmojiSymbols, -apple-system, system-ui, 'Segoe UI', Roboto, 'Helvetica Neue',
+    'Noto Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+}
+
+.hard {
+  background: #5e5df0;
+  border-radius: 999px;
+  box-shadow: #5e5df0 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: Inter, Helvetica, 'Apple Color Emoji', 'Segoe UI Emoji',
+    NotoColorEmoji, 'Noto Color Emoji', 'Segoe UI Symbol', 'Android Emoji',
+    EmojiSymbols, -apple-system, system-ui, 'Segoe UI', Roboto, 'Helvetica Neue',
+    'Noto Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+}
+
+.livesLeft {
+  padding-top: 10px;
+  margin-top: 100px;
+  font-size: 70px;
+  color: mediumslateblue;
+  border-top: dotted;
+  border-bottom: dotted;
+}
+
+.clicked {
+  opacity: 50%;
+  color: green;
+}
+
+p {
+  margin-top: 40px;
+  border-top-style: groove;
+  border-color: grey;
+  color: grey;
+}
+
+.timer {
+  color: mediumslateblue;
+  font-family: fantasy;
+}
+
+.safeClick {
+  background-image: linear-gradient(#42a1ec, #0070c9);
+  border: 1px solid #0077cc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  direction: ltr;
+  display: block;
+  font-family: 'SF Pro Text', 'SF Pro Icons', 'AOS Icons', 'Helvetica Neue',
+    Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  line-height: 3;
+  min-width: 30px;
+  overflow: visible;
+  padding: 4px 15px;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  margin: auto;
+  margin-top: 1rem;
+  display: inline-block;
+}
+
+.safeClick:disabled {
+  cursor: default;
+  opacity: 0.3;
+}
+
+.safeClick:hover {
+  background-image: linear-gradient(#51a9ee, #147bcd);
+  border-color: #1482d0;
+  text-decoration: none;
+}
+
+.safeClick:active {
+  background-image: linear-gradient(#3d94d9, #0067b9);
+  border-color: #006dbc;
+  outline: none;
+}
+
+.safeClick:focus {
+  box-shadow: rgba(131, 192, 253, 0.5) 0 0 0 3px;
+  outline: none;
+}
+
+.SafeBtn span {
+  color: #0070c9;
+}
+
+.hints {
+  display: inline-block;
+  cursor: pointer;
+}
+.bulbOff1 {
+  height: 45px;
+  margin-left: 700px;
+}
+.bulbOff2 {
+  height: 45px;
+}
+.bulbOff3 {
+  height: 45px;
+}
+
+.bulbOn {
+  height: 45px;
+}
+
+.hide {
+  display: none;
 }
